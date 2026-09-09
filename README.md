@@ -2,8 +2,6 @@
 
 This repository preserves the discontinued **Night Owl** Obsidian theme formerly distributed from `AstroAir/obsidian-night-owl`. The recovered CSS is published unchanged so existing users can install the same theme in new vaults.
 
-> Preservation status: Max Qian/AstroAir remains credited as the author of the recovered theme. Mark Spirek maintains this preservation repository and does not claim original authorship. The Community directory still has an archived `night-owl` listing under astroair, so this copy is listed as **Night Owl Classic**. Directory names cannot include the word "Theme".
-
 ![Night Owl Classic preview](screenshot.png)
 
 ## Install
@@ -12,17 +10,6 @@ This repository preserves the discontinued **Night Owl** Obsidian theme formerly
 2. In the target vault, create `.obsidian/themes/Night Owl Classic/`.
 3. Put both downloaded files in that folder.
 4. In Obsidian, open **Settings → Appearance → Themes** and select **Night Owl Classic**.
-
-## Integrity
-
-| File | SHA-256 |
-| --- | --- |
-| `manifest.json` (`1.0.3`) | `fb1adb858ffbed415bb84206b0b53c615ab23f2699cc9ee475c449c2743690f3` |
-| `theme.css` (unchanged from recovered `1.0.0`) | `2f503a22fdc0f8abf88e5200135b928128152c7e071c924d69f892b5568a4ba9` |
-
-The recovered `1.0.0` manifest hash remains `0cac7a349633006aa250493899ec5c04eed2875bd2ef7cded7b692eee288e4c4`. Version `1.0.3` only changes the listing name and version so the Community directory can accept the theme.
-
-Run `./scripts/verify-release.sh` from the repository root to verify both files, the manifest contents, and the lack of remote-loading CSS.
 
 ## Provenance
 
