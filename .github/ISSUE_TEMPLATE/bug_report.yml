@@ -1,0 +1,64 @@
+name: Compatibility report
+description: Report a reproducible Night Owl problem in a current Obsidian version.
+title: "[Compatibility]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping maintain the recovered Night Owl theme. Please test without unrelated CSS snippets before filing.
+  - type: input
+    id: obsidian-version
+    attributes:
+      label: Obsidian version
+      placeholder: "1.9.0"
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      placeholder: "macOS 26.0, Windows 11, iOS 26, Android 16, or Linux distribution"
+    validations:
+      required: true
+  - type: input
+    id: theme-version
+    attributes:
+      label: Night Owl version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: List the smallest sequence that demonstrates the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: plugins-disabled
+    attributes:
+      label: Does it reproduce with community plugins disabled?
+      options:
+        - "Yes"
+        - "No"
+        - "Not tested"
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not attached private vault content, credentials, or secrets.
+          required: true
