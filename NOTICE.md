@@ -11,6 +11,8 @@ The 1.0.0 preservation release is byte-identical to that installed copy:
 
 Version 1.0.3 keeps that recovered `theme.css` and only changes `manifest.json` so the Community directory listing name is **Night Owl Classic**. Directory names cannot include the word "Theme". The 1.0.3 manifest hash is `fb1adb858ffbed415bb84206b0b53c615ab23f2699cc9ee475c449c2743690f3`.
 
+Version 1.0.4 names Mark Spirek as the current maintainer in `manifest.json` and retains the same recovered `theme.css`. Original authorship and license notices remain as documented below.
+
 Recovery from an installed copy proves what Obsidian distributed to this installation; it does not by itself prove the complete history of the deleted source repository.
 
 ## Registry history

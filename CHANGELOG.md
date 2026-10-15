@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4 — 2026-10-15
+
+- List Mark Spirek as the current maintainer in the theme metadata.
+- Shorten the description and retain original-author credit, with full history in NOTICE.md.
+- Theme styling is unchanged.
+
 ## 1.0.3 — 2026-09-09
 
 - Changed the listing name to **Night Owl Classic**.

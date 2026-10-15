@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-expected_manifest='fb1adb858ffbed415bb84206b0b53c615ab23f2699cc9ee475c449c2743690f3'
+expected_manifest='18a8b27695aea92a68a30a446d6ee14d3432fdfbd9c07309c4de87222a08ce68'
 expected_theme='2f503a22fdc0f8abf88e5200135b928128152c7e071c924d69f892b5568a4ba9'
 
 test -f manifest.json
@@ -15,7 +15,7 @@ test "$actual_manifest" = "$expected_manifest"
 test "$actual_theme" = "$expected_theme"
 
 python3 -m json.tool manifest.json >/dev/null
-python3 -c 'import json; m=json.load(open("manifest.json")); assert m == {"name":"Night Owl Classic","version":"1.0.3","minAppVersion":"1.0.0","author":"Max Qian","authorUrl":"https://github.com/AstroAir"}'
+python3 -c 'import json; m=json.load(open("manifest.json")); assert m == {"name":"Night Owl Classic","version":"1.0.4","minAppVersion":"1.0.0","author":"Mark Spirek","authorUrl":"https://github.com/mspirek"}'
 python3 -c 'import struct; d=open("screenshot.png", "rb").read(24); assert d[:8] == b"\x89PNG\r\n\x1a\n"; assert struct.unpack(">II", d[16:24]) == (512, 288)'
 
 if grep -Ein '@import|url[[:space:]]*\(|https?://|javascript:' theme.css; then
@@ -23,4 +23,4 @@ if grep -Ein '@import|url[[:space:]]*\(|https?://|javascript:' theme.css; then
   exit 1
 fi
 
-printf '%s\n' 'Night Owl Classic 1.0.3 release verification passed.'
+printf '%s\n' 'Night Owl Classic 1.0.4 release verification passed.'
