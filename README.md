@@ -1,6 +1,6 @@
 # Night Owl Classic
 
-A dark theme for Obsidian, maintained by [Mark Spirek](https://github.com/mspirek).
+A dark theme for Obsidian
 
 ![Night Owl Classic preview](screenshot.png)
 
